@@ -1,6 +1,0 @@
-framework module ObjectiveDDP {
-  umbrella header "ObjectiveDDP-umbrella.h"
-
-  export *
-  module * { export * }
-}

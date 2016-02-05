@@ -8,11 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ExperienceController: UIViewController {
+    
+    var meteorClient: MeteorClient!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        meteorClient = (UIApplication.sharedApplication().delegate as! AppDelegate).meteorClient
     }
 
     override func didReceiveMemoryWarning() {

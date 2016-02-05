@@ -10,12 +10,19 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    let endpoint = "ws://localhost:3000/websocket"
+    let version = "1"
 
     var window: UIWindow?
-
+    var meteorClient: MeteorClient!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        meteorClient = MeteorClient.init(DDPVersion: version)
+        let ddp = ObjectiveDDP.init(URLString: endpoint, delegate: meteorClient)
+        meteorClient.ddp = ddp
+        meteorClient.ddp.connectWebSocket()
+        
         return true
     }
 

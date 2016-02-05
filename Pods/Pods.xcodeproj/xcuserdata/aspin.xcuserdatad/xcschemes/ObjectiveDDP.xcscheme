@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '03453972509E0A5319F22671'
+               BlueprintIdentifier = '2464D3580E2BFDF78FA7F9EB'
                BlueprintName = 'ObjectiveDDP'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'ObjectiveDDP.framework'>
+               BuildableName = 'libObjectiveDDP.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
