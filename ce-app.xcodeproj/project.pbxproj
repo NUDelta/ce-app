@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A72E99CCA64AD8A6E671F5CC /* libPods-ce-app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E77697E2B5011861CA6268 /* libPods-ce-app.a */; };
+		AA581F3E1C648EB9008A7995 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA581F3D1C648EB9008A7995 /* Experience.swift */; };
+		AA581F401C651883008A7995 /* ExperienceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA581F3F1C651883008A7995 /* ExperienceTableViewCell.swift */; };
 		AA6CEA4F1C6484EC00B06217 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6CEA4E1C6484EC00B06217 /* AppDelegate.swift */; };
 		AA6CEA511C6484EC00B06217 /* ExperienceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6CEA501C6484EC00B06217 /* ExperienceController.swift */; };
 		AA6CEA541C6484EC00B06217 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA6CEA521C6484EC00B06217 /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 		1E36F8A4B29EF791AE0FCFE6 /* Pods-ce-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ce-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ce-app/Pods-ce-app.debug.xcconfig"; sourceTree = "<group>"; };
 		8EE595625DAB852EF900A82B /* Pods-ce-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ce-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-ce-app/Pods-ce-app.release.xcconfig"; sourceTree = "<group>"; };
 		AA57700E1C64877100402BA4 /* ce-app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ce-app-Bridging-Header.h"; sourceTree = "<group>"; };
+		AA581F3D1C648EB9008A7995 /* Experience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
+		AA581F3F1C651883008A7995 /* ExperienceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewCell.swift; sourceTree = "<group>"; };
 		AA6CEA4B1C6484EC00B06217 /* ce-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ce-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6CEA4E1C6484EC00B06217 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA6CEA501C6484EC00B06217 /* ExperienceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceController.swift; sourceTree = "<group>"; };
@@ -97,6 +101,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AA581F3C1C648E9E008A7995 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AA581F3D1C648EB9008A7995 /* Experience.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		AA6CEA421C6484EC00B06217 = {
 			isa = PBXGroup;
 			children = (
@@ -123,8 +135,10 @@
 		AA6CEA4D1C6484EC00B06217 /* ce-app */ = {
 			isa = PBXGroup;
 			children = (
+				AA581F3C1C648E9E008A7995 /* Classes */,
 				AA6CEA4E1C6484EC00B06217 /* AppDelegate.swift */,
 				AA6CEA501C6484EC00B06217 /* ExperienceController.swift */,
+				AA581F3F1C651883008A7995 /* ExperienceTableViewCell.swift */,
 				AA6CEA521C6484EC00B06217 /* Main.storyboard */,
 				AA6CEA551C6484EC00B06217 /* Assets.xcassets */,
 				AA6CEA571C6484EC00B06217 /* LaunchScreen.storyboard */,
@@ -333,8 +347,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA581F3E1C648EB9008A7995 /* Experience.swift in Sources */,
 				AA6CEA511C6484EC00B06217 /* ExperienceController.swift in Sources */,
 				AA6CEA4F1C6484EC00B06217 /* AppDelegate.swift in Sources */,
+				AA581F401C651883008A7995 /* ExperienceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
