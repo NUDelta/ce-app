@@ -23,7 +23,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         meteorClient.ddp = ddp
         meteorClient.ddp.connectWebSocket()
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "meteorClientConnected", name: MeteorClientDidConnectNotification, object: nil)
+        
         return true
+    }
+    
+    func meteorClientConnected() {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if let sessionToken = defaults.stringForKey("meteorSessionToken") {
+            meteorClient.logonWithSessionToken(sessionToken)
+            // TODO: handle error case?
+            // manually set userId? doesn't seem to be up
+        }
     }
 
     func applicationWillResignActive(application: UIApplication) {
