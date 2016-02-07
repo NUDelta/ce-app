@@ -21,10 +21,6 @@ class SignUpViewController: UIViewController {
     
     
     @IBAction func signUpButtonTapped(sender: UIButton) {
-        if let mClient = meteorClient {
-            print(mClient)
-        }
-        
         meteorClient.signupWithEmail(emailTextField.text, password: passwordTextField.text, fullname: "") { (response, error) -> Void in
             if let result = response {
                 let userInfo = result["result"] as! [String: AnyObject]
@@ -34,6 +30,8 @@ class SignUpViewController: UIViewController {
                 defaults.setObject(userInfo["id"] as! String, forKey: "meteorId")
                 defaults.setObject(userInfo["token"] as! String, forKey: "meteorSessionToken")
                 defaults.setObject(tokenExpiration["$date"], forKey: "meteorSessionTokenExpiration")
+                
+                self.performSegueWithIdentifier("profileSettings", sender: self)
             }
             
         }        

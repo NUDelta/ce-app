@@ -38,18 +38,29 @@ class ExperienceController: UITableViewController {
     }
     
     func setupDataSources() {
-        let params: [AnyObject] = []
-        meteorClient.callMethodName("getExperiences", parameters: params) { (response, error) -> Void in
-            // load experiences here.
-            if let experiences = response["result"] as? [[String:AnyObject]] {
-                self.experiences = experiences.map { (experience) -> Experience in
-                    return Experience(name: experience["name"] as! String, author: experience["author"] as! String, description: experience["description"] as! String, startEmailText: experience["startEmailText"] as! String, modules: experience["modules"] as! [String], requirements: experience["requirements"] as! [String])
-                }
+        let params: [AnyObject] = [["_id": meteorClient.userId]]
+        meteorClient.callMethodName("getUsers", parameters: params) { (response, error) -> Void in
+            if let result = response {
+                let user = result["result"]![0] as! [String: AnyObject] // because this is array
+                let profile = user["profile"] as! [String: AnyObject]
+                let experiences = profile["experiences"] as! [String]
                 
-                self.tableView.reloadData()
+                let query = ["_id": ["$in": experiences]]
+                let params = [query]
+                
+                self.meteorClient.callMethodName("getExperiences", parameters: params) { (response, error) -> Void in
+                    // load experiences here.
+                    if let experiences = response["result"] as? [[String:AnyObject]] {
+                        self.experiences = experiences.map { (experience) -> Experience in
+                            return Experience(name: experience["name"] as! String, author: experience["author"] as! String, description: experience["description"] as! String, startEmailText: experience["startEmailText"] as! String, modules: experience["modules"] as! [String], requirements: experience["requirements"] as! [String])
+                        }
+                        
+                        self.tableView.reloadData()
+                    }
+                }
             }
         }
-    }
+            }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
