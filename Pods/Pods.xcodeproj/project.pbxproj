@@ -8,33 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		0217ECFFA29E7E4ABFF62AE496C2D800 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC51718377FC85475D865A171A8B5CC /* Foundation.framework */; };
-		0BD453630B9DF8F40D3C8CFEF23B9F30 /* ObjectiveDDP.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AFAA51D2221B030E889F04F450A6BC /* ObjectiveDDP.m */; };
-		12A98F672C9C6924268A604882113195 /* M13OrderedDictionary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C41866403ECAC20A7D35B5CD9F2883 /* M13OrderedDictionary-dummy.m */; };
-		169A5EACDE0F57E089B21A1CE37F27D3 /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = C69911BAC4709B87C9390E77708DEB1E /* SRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BD453630B9DF8F40D3C8CFEF23B9F30 /* ObjectiveDDP.m in Sources */ = {isa = PBXBuildFile; fileRef = 13335470049D0AFCC692B10318C38564 /* ObjectiveDDP.m */; };
+		12A98F672C9C6924268A604882113195 /* M13OrderedDictionary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F22D1DE22ABCA767DADA6D189FF5093B /* M13OrderedDictionary-dummy.m */; };
+		1B702AB11A38037D20CDE9E4522F5A6F /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = BE475E3BB637A43810C1F4B9C309038D /* SRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		334CD984E9FD5C200D83D3A1FD0A6597 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC51718377FC85475D865A171A8B5CC /* Foundation.framework */; };
-		5236FDBCAD10102274CC94EA3F928401 /* MeteorClient.h in Headers */ = {isa = PBXBuildFile; fileRef = FD66F6A9ED3F393CEA479DCEC2FF0E97 /* MeteorClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52D8935C28551B9297C66A2A404ECFEB /* BSONIdGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 61CDF452706DC003BE40376BC26DED2F /* BSONIdGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		585EF79DCE867D1B786298B69AC0738D /* DependencyProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 39BD767A78E05465890C886D3AFA3D9E /* DependencyProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63426891AE06C79DCC7A38C0A5A5AE79 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F9879C72E6A736208857DC75B0D9081A /* NSData+SRB64Additions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5236FDBCAD10102274CC94EA3F928401 /* MeteorClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DECAD62615665C4395C313FF3E535D0 /* MeteorClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52D8935C28551B9297C66A2A404ECFEB /* BSONIdGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = B86446F3489AD04A1A22CF5965467B90 /* BSONIdGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		585EF79DCE867D1B786298B69AC0738D /* DependencyProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 157CAB714473D307099B3F7C6F431993 /* DependencyProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77985CDC2F2D9218AD028D9A4DC5DD1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC51718377FC85475D865A171A8B5CC /* Foundation.framework */; };
-		8C4E07660B1FA19D3B9FCE16FAFF6DD4 /* ObjectiveDDP.h in Headers */ = {isa = PBXBuildFile; fileRef = 732E1657B08CE411B8A5E85CAFE97E13 /* ObjectiveDDP.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		91084493E2CC8F1AEACF8B1F3F29BF9E /* SocketRocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D77DC4AB887FBB3FA404D885746A46A /* SocketRocket-dummy.m */; };
+		8C4E07660B1FA19D3B9FCE16FAFF6DD4 /* ObjectiveDDP.h in Headers */ = {isa = PBXBuildFile; fileRef = F9D2596AB610AC7826FF4C1DC8868CFB /* ObjectiveDDP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96B8898DDBC9585CF4FA14D657392467 /* Pods-ce-app-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9240D5B834BB17A327971411E7DDF520 /* Pods-ce-app-dummy.m */; };
-		A9E60B802DAAAD5CD3FC1901B9888145 /* MeteorClient+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CD42C14E940E1E28694F961A71DB11F2 /* MeteorClient+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B1413A719A3D982A6EF0D1F38C274D43 /* NSData+SRB64Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = B648AE7DFD9CAF6CE848E3605474E666 /* NSData+SRB64Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C5D39A674648954C8FF7A77FA23EEBBD /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = D1B7EBE3D122F0EE9C5C0BCAC50A3C21 /* base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C75DBA714E7E5F92BCDB48FF3DA7AE8C /* M13OrderedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = D3383943C9EC672FE76519D1CF046C04 /* M13OrderedDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E60B802DAAAD5CD3FC1901B9888145 /* MeteorClient+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2AE6016AD64CCF4D83735EF383DF00 /* MeteorClient+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B72067F6C5BD73CC4DEDEB2FD6ED5696 /* SocketRocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D55C343E6F8E059EC44542650E76021 /* SocketRocket-dummy.m */; };
+		C1CE87B2E69C92A37CE66248DAB8C774 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E6791FBCA26E47DE5706B08E97C12A82 /* SRWebSocket.m */; };
+		C75DBA714E7E5F92BCDB48FF3DA7AE8C /* M13OrderedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D07F7EE17B077A7ADD98B16709CA5A /* M13OrderedDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C98B1D090EB5D325D56B99EDA6863BDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC51718377FC85475D865A171A8B5CC /* Foundation.framework */; };
-		CB09C2E8762DF7A8927CEFB472F38815 /* BSONIdGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = D781134C3E67B22FCEBDA68F113100E2 /* BSONIdGenerator.m */; };
-		CCA0D6231C37E204B560C806A14A11DB /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 374877B930C1E3570A454AADB1A65263 /* SRWebSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D7625F05CD117A5FE106C469F3826623 /* DependencyProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BC19F6ECC2994D5BDF27E0D9445D12D6 /* DependencyProvider.m */; };
-		DEC65B7D7678ABA0BB93DB9C267ECE96 /* M13OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EE7094984F9DC8A7C2281BCED63665 /* M13OrderedDictionary.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CB09C2E8762DF7A8927CEFB472F38815 /* BSONIdGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6901AA1B03F7C7B04381208A92F19C /* BSONIdGenerator.m */; };
+		D7625F05CD117A5FE106C469F3826623 /* DependencyProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E938B1779E728B7FDF9E17BF462BD8 /* DependencyProvider.m */; };
+		DEC65B7D7678ABA0BB93DB9C267ECE96 /* M13OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = EA52058D478D138DE954B42AF23A1852 /* M13OrderedDictionary.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E1D4966C65DBFB49B8BA4857FCA5E43D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E967D042C48D5885583D70105EF16526 /* Security.framework */; };
-		E5888B92947ECFE5100065F794A0B36A /* MeteorClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DF35E00FA280ACE2F13A35BC074E5 /* MeteorClient.m */; };
+		E5888B92947ECFE5100065F794A0B36A /* MeteorClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E20940C47800D28D406FB7BB9B0643F1 /* MeteorClient.m */; };
 		E7DECED7268B91BE5A01107562DD8541 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED316EE84B1D3AAE415457D92E62A3A0 /* CFNetwork.framework */; };
-		EBB89840285BE056DF57FD911EEE8C63 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 4167A1315FF955F3BC147AF85947D01C /* base64.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		EF3C40EBD7013E5A37EA5A345999DBA0 /* MeteorClient+Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAAB3A6FF403C7A5BEFEFF0AECFD86B /* MeteorClient+Parsing.m */; };
-		FB1F3C629B9779414192D7E2173CC1E5 /* ObjectiveDDP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8022FC19428548F9679B2D50016B26FB /* ObjectiveDDP-dummy.m */; };
+		EF3C40EBD7013E5A37EA5A345999DBA0 /* MeteorClient+Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C6A1FBFF067F78BD4025C5C92DD8AE /* MeteorClient+Parsing.m */; };
+		FB1F3C629B9779414192D7E2173CC1E5 /* ObjectiveDDP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD03736389A12200FC25722A7CDC7E9D /* ObjectiveDDP-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,47 +73,43 @@
 
 /* Begin PBXFileReference section */
 		1243FBD2B677AC43B009821EFD704CDE /* Pods-ce-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ce-app.debug.xcconfig"; sourceTree = "<group>"; };
+		13335470049D0AFCC692B10318C38564 /* ObjectiveDDP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ObjectiveDDP.m; path = ObjectiveDDP/ObjectiveDDP.m; sourceTree = "<group>"; };
+		157CAB714473D307099B3F7C6F431993 /* DependencyProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DependencyProvider.h; path = ObjectiveDDP/DependencyProvider.h; sourceTree = "<group>"; };
 		1DA5D8EC23DADB59AE3B248B92925C01 /* libSocketRocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSocketRocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A4DF35E00FA280ACE2F13A35BC074E5 /* MeteorClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MeteorClient.m; path = ObjectiveDDP/MeteorClient.m; sourceTree = "<group>"; };
-		2BAAB3A6FF403C7A5BEFEFF0AECFD86B /* MeteorClient+Parsing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MeteorClient+Parsing.m"; path = "ObjectiveDDP/MeteorClient+Parsing.m"; sourceTree = "<group>"; };
-		374877B930C1E3570A454AADB1A65263 /* SRWebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
 		38F1FE21D36CE66F5940DE74C2D2B495 /* libPods-ce-app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ce-app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		39BD767A78E05465890C886D3AFA3D9E /* DependencyProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DependencyProvider.h; path = ObjectiveDDP/DependencyProvider.h; sourceTree = "<group>"; };
-		4167A1315FF955F3BC147AF85947D01C /* base64.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = base64.c; path = SocketRocket/base64.c; sourceTree = "<group>"; };
-		48AFAA51D2221B030E889F04F450A6BC /* ObjectiveDDP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ObjectiveDDP.m; path = ObjectiveDDP/ObjectiveDDP.m; sourceTree = "<group>"; };
+		3AC70B772F011DB0FC0F6471908CB3D3 /* M13OrderedDictionary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "M13OrderedDictionary-prefix.pch"; sourceTree = "<group>"; };
 		57E548722E82ABB1759CBEFDE0569271 /* Pods-ce-app-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ce-app-acknowledgements.plist"; sourceTree = "<group>"; };
-		5D77DC4AB887FBB3FA404D885746A46A /* SocketRocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SocketRocket-dummy.m"; sourceTree = "<group>"; };
-		61CDF452706DC003BE40376BC26DED2F /* BSONIdGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSONIdGenerator.h; path = ObjectiveDDP/BSONIdGenerator.h; sourceTree = "<group>"; };
-		62150ADE935DDD4DF2FF05918DB90050 /* ObjectiveDDP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectiveDDP-prefix.pch"; sourceTree = "<group>"; };
+		5A2AE6016AD64CCF4D83735EF383DF00 /* MeteorClient+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MeteorClient+Private.h"; path = "ObjectiveDDP/MeteorClient+Private.h"; sourceTree = "<group>"; };
+		6D55C343E6F8E059EC44542650E76021 /* SocketRocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SocketRocket-dummy.m"; sourceTree = "<group>"; };
 		7305B85B845AFD04D07C56D047CE31AC /* Pods-ce-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ce-app.release.xcconfig"; sourceTree = "<group>"; };
-		732E1657B08CE411B8A5E85CAFE97E13 /* ObjectiveDDP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectiveDDP.h; path = ObjectiveDDP/ObjectiveDDP.h; sourceTree = "<group>"; };
-		8022FC19428548F9679B2D50016B26FB /* ObjectiveDDP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectiveDDP-dummy.m"; sourceTree = "<group>"; };
-		848CA7F76276020B8EF6FAFD71CF99DA /* ObjectiveDDP.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectiveDDP.xcconfig; sourceTree = "<group>"; };
-		8A9A1356D1B88022AD23257DEBF73F6C /* M13OrderedDictionary.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = M13OrderedDictionary.xcconfig; sourceTree = "<group>"; };
+		7DECAD62615665C4395C313FF3E535D0 /* MeteorClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MeteorClient.h; path = ObjectiveDDP/MeteorClient.h; sourceTree = "<group>"; };
+		84C6A1FBFF067F78BD4025C5C92DD8AE /* MeteorClient+Parsing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MeteorClient+Parsing.m"; path = "ObjectiveDDP/MeteorClient+Parsing.m"; sourceTree = "<group>"; };
+		8B6901AA1B03F7C7B04381208A92F19C /* BSONIdGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSONIdGenerator.m; path = ObjectiveDDP/BSONIdGenerator.m; sourceTree = "<group>"; };
 		9240D5B834BB17A327971411E7DDF520 /* Pods-ce-app-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ce-app-dummy.m"; sourceTree = "<group>"; };
-		93C41866403ECAC20A7D35B5CD9F2883 /* M13OrderedDictionary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "M13OrderedDictionary-dummy.m"; sourceTree = "<group>"; };
 		962CFDFA1EBB6B18BEFA3C24AE01F73F /* libM13OrderedDictionary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libM13OrderedDictionary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		97E938B1779E728B7FDF9E17BF462BD8 /* DependencyProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DependencyProvider.m; path = ObjectiveDDP/DependencyProvider.m; sourceTree = "<group>"; };
 		A6154A9A16EB3AC51534B842A662D730 /* libObjectiveDDP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjectiveDDP.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BFEDCD41C7A8546ADB3FA4D3D338E0 /* Pods-ce-app-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ce-app-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B4EE7094984F9DC8A7C2281BCED63665 /* M13OrderedDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = M13OrderedDictionary.m; sourceTree = "<group>"; };
-		B648AE7DFD9CAF6CE848E3605474E666 /* NSData+SRB64Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+SRB64Additions.h"; path = "SocketRocket/NSData+SRB64Additions.h"; sourceTree = "<group>"; };
+		B86446F3489AD04A1A22CF5965467B90 /* BSONIdGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSONIdGenerator.h; path = ObjectiveDDP/BSONIdGenerator.h; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BC19F6ECC2994D5BDF27E0D9445D12D6 /* DependencyProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DependencyProvider.m; path = ObjectiveDDP/DependencyProvider.m; sourceTree = "<group>"; };
-		C69911BAC4709B87C9390E77708DEB1E /* SRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
+		BE475E3BB637A43810C1F4B9C309038D /* SRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
+		C0473417AF371F53A47531C476EE40AE /* ObjectiveDDP.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectiveDDP.xcconfig; sourceTree = "<group>"; };
+		C49C1A870C8BED2D2C09D384E790FC6E /* SocketRocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-prefix.pch"; sourceTree = "<group>"; };
+		CBA857867E50F8BE8847DA5EC0AD8B36 /* ObjectiveDDP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectiveDDP-prefix.pch"; sourceTree = "<group>"; };
 		CBC51718377FC85475D865A171A8B5CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CD42C14E940E1E28694F961A71DB11F2 /* MeteorClient+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MeteorClient+Private.h"; path = "ObjectiveDDP/MeteorClient+Private.h"; sourceTree = "<group>"; };
-		D1B7EBE3D122F0EE9C5C0BCAC50A3C21 /* base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = base64.h; path = SocketRocket/base64.h; sourceTree = "<group>"; };
-		D3383943C9EC672FE76519D1CF046C04 /* M13OrderedDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = M13OrderedDictionary.h; sourceTree = "<group>"; };
-		D781134C3E67B22FCEBDA68F113100E2 /* BSONIdGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSONIdGenerator.m; path = ObjectiveDDP/BSONIdGenerator.m; sourceTree = "<group>"; };
+		D4D07F7EE17B077A7ADD98B16709CA5A /* M13OrderedDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = M13OrderedDictionary.h; sourceTree = "<group>"; };
 		DC220D6FCFDDEC686C62FCC17F8F92AD /* Pods-ce-app-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ce-app-frameworks.sh"; sourceTree = "<group>"; };
+		E15C35506ACEB36740BF7D62BC71C11E /* SocketRocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketRocket.xcconfig; sourceTree = "<group>"; };
+		E20940C47800D28D406FB7BB9B0643F1 /* MeteorClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MeteorClient.m; path = ObjectiveDDP/MeteorClient.m; sourceTree = "<group>"; };
+		E55BFC671AAF79FF1027152ED3A0748F /* M13OrderedDictionary.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = M13OrderedDictionary.xcconfig; sourceTree = "<group>"; };
+		E6791FBCA26E47DE5706B08E97C12A82 /* SRWebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
 		E67D6E07E2FA7541A49BBA19B6B17D31 /* Pods-ce-app-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ce-app-resources.sh"; sourceTree = "<group>"; };
 		E967D042C48D5885583D70105EF16526 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		EA52058D478D138DE954B42AF23A1852 /* M13OrderedDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = M13OrderedDictionary.m; sourceTree = "<group>"; };
 		ED316EE84B1D3AAE415457D92E62A3A0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		F70D9D12892353D3BA878EAFC8DD2AFF /* SocketRocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-prefix.pch"; sourceTree = "<group>"; };
-		F9879C72E6A736208857DC75B0D9081A /* NSData+SRB64Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+SRB64Additions.m"; path = "SocketRocket/NSData+SRB64Additions.m"; sourceTree = "<group>"; };
-		F9A4C2100354B79FC75152E05CBE562B /* SocketRocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketRocket.xcconfig; sourceTree = "<group>"; };
-		FD66F6A9ED3F393CEA479DCEC2FF0E97 /* MeteorClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MeteorClient.h; path = ObjectiveDDP/MeteorClient.h; sourceTree = "<group>"; };
-		FECAB8C2EDF253C30E89C416CB0B86F1 /* M13OrderedDictionary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "M13OrderedDictionary-prefix.pch"; sourceTree = "<group>"; };
+		F22D1DE22ABCA767DADA6D189FF5093B /* M13OrderedDictionary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "M13OrderedDictionary-dummy.m"; sourceTree = "<group>"; };
+		F9D2596AB610AC7826FF4C1DC8868CFB /* ObjectiveDDP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectiveDDP.h; path = ObjectiveDDP/ObjectiveDDP.h; sourceTree = "<group>"; };
+		FD03736389A12200FC25722A7CDC7E9D /* ObjectiveDDP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectiveDDP-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,16 +158,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		19451E8497385B40FC615105BA312FB6 /* M13OrderedDictionary */ = {
-			isa = PBXGroup;
-			children = (
-				D3383943C9EC672FE76519D1CF046C04 /* M13OrderedDictionary.h */,
-				B4EE7094984F9DC8A7C2281BCED63665 /* M13OrderedDictionary.m */,
-				62F8E07E6CD08B817609F64E39A849B4 /* Support Files */,
-			);
-			path = M13OrderedDictionary;
-			sourceTree = "<group>";
-		};
 		1A7FBE6528AE4943833B109A733C99A0 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,15 +166,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		62F8E07E6CD08B817609F64E39A849B4 /* Support Files */ = {
+		50CB5FDDCBA8CBD5A063EC52E9495732 /* SocketRocket */ = {
 			isa = PBXGroup;
 			children = (
-				8A9A1356D1B88022AD23257DEBF73F6C /* M13OrderedDictionary.xcconfig */,
-				93C41866403ECAC20A7D35B5CD9F2883 /* M13OrderedDictionary-dummy.m */,
-				FECAB8C2EDF253C30E89C416CB0B86F1 /* M13OrderedDictionary-prefix.pch */,
+				BE475E3BB637A43810C1F4B9C309038D /* SRWebSocket.h */,
+				E6791FBCA26E47DE5706B08E97C12A82 /* SRWebSocket.m */,
+				91AEBC96087AB59857FCA6D5EED1B80A /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/M13OrderedDictionary";
+			path = SocketRocket;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -200,7 +181,7 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				A73218C748662BC9F8190E5C81540F14 /* Pods */,
+				A89A6F77118B179EEBB067076A98DAAA /* Pods */,
 				7F671F2B024D2F7C62CC3F5AB298733C /* Products */,
 				1A7FBE6528AE4943833B109A733C99A0 /* Targets Support Files */,
 			);
@@ -217,50 +198,36 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7FF429199899F3D5990A4D00CFCC8DEF /* SocketRocket */ = {
+		8AEEB85E8ADC74A051D5F3E145E04510 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4167A1315FF955F3BC147AF85947D01C /* base64.c */,
-				D1B7EBE3D122F0EE9C5C0BCAC50A3C21 /* base64.h */,
-				B648AE7DFD9CAF6CE848E3605474E666 /* NSData+SRB64Additions.h */,
-				F9879C72E6A736208857DC75B0D9081A /* NSData+SRB64Additions.m */,
-				C69911BAC4709B87C9390E77708DEB1E /* SRWebSocket.h */,
-				374877B930C1E3570A454AADB1A65263 /* SRWebSocket.m */,
-				B2899BEC4CD5D38F464AF35AEAAFE73E /* Support Files */,
-			);
-			path = SocketRocket;
-			sourceTree = "<group>";
-		};
-		88F6D221C3CBC4518CEFB4537076B105 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				848CA7F76276020B8EF6FAFD71CF99DA /* ObjectiveDDP.xcconfig */,
-				8022FC19428548F9679B2D50016B26FB /* ObjectiveDDP-dummy.m */,
-				62150ADE935DDD4DF2FF05918DB90050 /* ObjectiveDDP-prefix.pch */,
+				E55BFC671AAF79FF1027152ED3A0748F /* M13OrderedDictionary.xcconfig */,
+				F22D1DE22ABCA767DADA6D189FF5093B /* M13OrderedDictionary-dummy.m */,
+				3AC70B772F011DB0FC0F6471908CB3D3 /* M13OrderedDictionary-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/ObjectiveDDP";
+			path = "../Target Support Files/M13OrderedDictionary";
 			sourceTree = "<group>";
 		};
-		A73218C748662BC9F8190E5C81540F14 /* Pods */ = {
+		91AEBC96087AB59857FCA6D5EED1B80A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				19451E8497385B40FC615105BA312FB6 /* M13OrderedDictionary */,
-				BBF20D38F88A552F46461A19E4CFF12A /* ObjectiveDDP */,
-				7FF429199899F3D5990A4D00CFCC8DEF /* SocketRocket */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		B2899BEC4CD5D38F464AF35AEAAFE73E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F9A4C2100354B79FC75152E05CBE562B /* SocketRocket.xcconfig */,
-				5D77DC4AB887FBB3FA404D885746A46A /* SocketRocket-dummy.m */,
-				F70D9D12892353D3BA878EAFC8DD2AFF /* SocketRocket-prefix.pch */,
+				E15C35506ACEB36740BF7D62BC71C11E /* SocketRocket.xcconfig */,
+				6D55C343E6F8E059EC44542650E76021 /* SocketRocket-dummy.m */,
+				C49C1A870C8BED2D2C09D384E790FC6E /* SocketRocket-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SocketRocket";
+			sourceTree = "<group>";
+		};
+		A89A6F77118B179EEBB067076A98DAAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE3F8422A74129930A70E0177F51A7F1 /* M13OrderedDictionary */,
+				C9B9F7E1FDBA1A4864E91624345B8F60 /* ObjectiveDDP */,
+				50CB5FDDCBA8CBD5A063EC52E9495732 /* SocketRocket */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		B728418FA3338AB680410C5B26CF547F /* iOS */ = {
@@ -273,20 +240,30 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		BBF20D38F88A552F46461A19E4CFF12A /* ObjectiveDDP */ = {
+		BE3F8422A74129930A70E0177F51A7F1 /* M13OrderedDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				61CDF452706DC003BE40376BC26DED2F /* BSONIdGenerator.h */,
-				D781134C3E67B22FCEBDA68F113100E2 /* BSONIdGenerator.m */,
-				39BD767A78E05465890C886D3AFA3D9E /* DependencyProvider.h */,
-				BC19F6ECC2994D5BDF27E0D9445D12D6 /* DependencyProvider.m */,
-				FD66F6A9ED3F393CEA479DCEC2FF0E97 /* MeteorClient.h */,
-				2A4DF35E00FA280ACE2F13A35BC074E5 /* MeteorClient.m */,
-				2BAAB3A6FF403C7A5BEFEFF0AECFD86B /* MeteorClient+Parsing.m */,
-				CD42C14E940E1E28694F961A71DB11F2 /* MeteorClient+Private.h */,
-				732E1657B08CE411B8A5E85CAFE97E13 /* ObjectiveDDP.h */,
-				48AFAA51D2221B030E889F04F450A6BC /* ObjectiveDDP.m */,
-				88F6D221C3CBC4518CEFB4537076B105 /* Support Files */,
+				D4D07F7EE17B077A7ADD98B16709CA5A /* M13OrderedDictionary.h */,
+				EA52058D478D138DE954B42AF23A1852 /* M13OrderedDictionary.m */,
+				8AEEB85E8ADC74A051D5F3E145E04510 /* Support Files */,
+			);
+			path = M13OrderedDictionary;
+			sourceTree = "<group>";
+		};
+		C9B9F7E1FDBA1A4864E91624345B8F60 /* ObjectiveDDP */ = {
+			isa = PBXGroup;
+			children = (
+				B86446F3489AD04A1A22CF5965467B90 /* BSONIdGenerator.h */,
+				8B6901AA1B03F7C7B04381208A92F19C /* BSONIdGenerator.m */,
+				157CAB714473D307099B3F7C6F431993 /* DependencyProvider.h */,
+				97E938B1779E728B7FDF9E17BF462BD8 /* DependencyProvider.m */,
+				7DECAD62615665C4395C313FF3E535D0 /* MeteorClient.h */,
+				E20940C47800D28D406FB7BB9B0643F1 /* MeteorClient.m */,
+				84C6A1FBFF067F78BD4025C5C92DD8AE /* MeteorClient+Parsing.m */,
+				5A2AE6016AD64CCF4D83735EF383DF00 /* MeteorClient+Private.h */,
+				F9D2596AB610AC7826FF4C1DC8868CFB /* ObjectiveDDP.h */,
+				13335470049D0AFCC692B10318C38564 /* ObjectiveDDP.m */,
+				EC6130D46FDAE1DB70F968FC2F54414D /* Support Files */,
 			);
 			path = ObjectiveDDP;
 			sourceTree = "<group>";
@@ -304,6 +281,17 @@
 			);
 			name = "Pods-ce-app";
 			path = "Target Support Files/Pods-ce-app";
+			sourceTree = "<group>";
+		};
+		EC6130D46FDAE1DB70F968FC2F54414D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0473417AF371F53A47531C476EE40AE /* ObjectiveDDP.xcconfig */,
+				FD03736389A12200FC25722A7CDC7E9D /* ObjectiveDDP-dummy.m */,
+				CBA857867E50F8BE8847DA5EC0AD8B36 /* ObjectiveDDP-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ObjectiveDDP";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,13 +317,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0C58F4556233B40D31472FAC8EABC06 /* Headers */ = {
+		88DF49A19090837CC243D9D3A9E553AA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5D39A674648954C8FF7A77FA23EEBBD /* base64.h in Headers */,
-				B1413A719A3D982A6EF0D1F38C274D43 /* NSData+SRB64Additions.h in Headers */,
-				169A5EACDE0F57E089B21A1CE37F27D3 /* SRWebSocket.h in Headers */,
+				1B702AB11A38037D20CDE9E4522F5A6F /* SRWebSocket.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,9 +370,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4717A6841F00370331DC4146A3D7E9C0 /* Build configuration list for PBXNativeTarget "SocketRocket" */;
 			buildPhases = (
-				DEE94EB7DB3190E118917500773D6555 /* Sources */,
+				A0192816A24021FB30D81AD646279768 /* Sources */,
 				C9B1C4AD42C34894DCA9C7BF7B03A321 /* Frameworks */,
-				E0C58F4556233B40D31472FAC8EABC06 /* Headers */,
+				88DF49A19090837CC243D9D3A9E553AA /* Headers */,
 			);
 			buildRules = (
 			);
@@ -461,6 +447,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A0192816A24021FB30D81AD646279768 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B72067F6C5BD73CC4DEDEB2FD6ED5696 /* SocketRocket-dummy.m in Sources */,
+				C1CE87B2E69C92A37CE66248DAB8C774 /* SRWebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC9B4FD5086FE76BB11F1B4D295D8C08 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -471,17 +466,6 @@
 				E5888B92947ECFE5100065F794A0B36A /* MeteorClient.m in Sources */,
 				FB1F3C629B9779414192D7E2173CC1E5 /* ObjectiveDDP-dummy.m in Sources */,
 				0BD453630B9DF8F40D3C8CFEF23B9F30 /* ObjectiveDDP.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEE94EB7DB3190E118917500773D6555 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EBB89840285BE056DF57FD911EEE8C63 /* base64.c in Sources */,
-				63426891AE06C79DCC7A38C0A5A5AE79 /* NSData+SRB64Additions.m in Sources */,
-				91084493E2CC8F1AEACF8B1F3F29BF9E /* SocketRocket-dummy.m in Sources */,
-				CCA0D6231C37E204B560C806A14A11DB /* SRWebSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,7 +507,7 @@
 /* Begin XCBuildConfiguration section */
 		2712D20C324A24F789FDD5622813A954 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9A4C2100354B79FC75152E05CBE562B /* SocketRocket.xcconfig */;
+			baseConfigurationReference = E15C35506ACEB36740BF7D62BC71C11E /* SocketRocket.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
@@ -541,7 +525,7 @@
 		};
 		30D56A2CD52CA7CA36B8BB1874ABBB90 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9A4C2100354B79FC75152E05CBE562B /* SocketRocket.xcconfig */;
+			baseConfigurationReference = E15C35506ACEB36740BF7D62BC71C11E /* SocketRocket.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
@@ -559,7 +543,7 @@
 		};
 		384845B00571E15A03F63FAECB4CF2F8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A9A1356D1B88022AD23257DEBF73F6C /* M13OrderedDictionary.xcconfig */;
+			baseConfigurationReference = E55BFC671AAF79FF1027152ED3A0748F /* M13OrderedDictionary.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/M13OrderedDictionary/M13OrderedDictionary-prefix.pch";
@@ -577,7 +561,7 @@
 		};
 		47255B47D54C4BA34ED39BE6FD199C3E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 848CA7F76276020B8EF6FAFD71CF99DA /* ObjectiveDDP.xcconfig */;
+			baseConfigurationReference = C0473417AF371F53A47531C476EE40AE /* ObjectiveDDP.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/ObjectiveDDP/ObjectiveDDP-prefix.pch";
@@ -651,7 +635,7 @@
 		};
 		A93BDCC0F4FBE910A2C4E554E471CE18 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 848CA7F76276020B8EF6FAFD71CF99DA /* ObjectiveDDP.xcconfig */;
+			baseConfigurationReference = C0473417AF371F53A47531C476EE40AE /* ObjectiveDDP.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/ObjectiveDDP/ObjectiveDDP-prefix.pch";
@@ -720,7 +704,7 @@
 		};
 		DED0667270191EAEB485DBFF46E49DAD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A9A1356D1B88022AD23257DEBF73F6C /* M13OrderedDictionary.xcconfig */;
+			baseConfigurationReference = E55BFC671AAF79FF1027152ED3A0748F /* M13OrderedDictionary.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/M13OrderedDictionary/M13OrderedDictionary-prefix.pch";

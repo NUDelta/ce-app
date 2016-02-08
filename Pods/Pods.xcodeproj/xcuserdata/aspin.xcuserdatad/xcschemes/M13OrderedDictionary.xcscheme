@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C142E3BFD3F893BC126EB671'
+               BlueprintIdentifier = '08AA30B40D63FB853256DBAE'
                BlueprintName = 'M13OrderedDictionary'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libM13OrderedDictionary.a'>
