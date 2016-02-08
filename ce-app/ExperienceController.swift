@@ -21,12 +21,14 @@ class ExperienceController: UITableViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        if !meteorClient.connected {
-            NSNotificationCenter.defaultCenter().addObserver(self, selector: "isConnected", name: MeteorClientDidConnectNotification, object: nil)
-            alertController = UIAlertController(title: "Connecting...", message: "Waiting to connect to server", preferredStyle: .Alert)
-            presentViewController(alertController, animated: true, completion: nil)
-        } else {
-            setupDataSources()
+        if (meteorClient.userId != nil) {
+            if !meteorClient.connected {
+                NSNotificationCenter.defaultCenter().addObserver(self, selector: "isConnected", name: MeteorClientDidConnectNotification, object: nil)
+                alertController = UIAlertController(title: "Connecting...", message: "Waiting to connect to server", preferredStyle: .Alert)
+                presentViewController(alertController, animated: true, completion: nil)
+            } else {
+                setupDataSources()
+            }
         }
     }
     

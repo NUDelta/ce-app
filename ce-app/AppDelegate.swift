@@ -22,20 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let ddp = ObjectiveDDP.init(URLString: endpoint, delegate: meteorClient)
         meteorClient.ddp = ddp
         meteorClient.ddp.connectWebSocket()
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "meteorClientConnected", name: MeteorClientDidConnectNotification, object: nil)
-        
         return true
     }
-    
-    func meteorClientConnected() {
-        let defaults = NSUserDefaults.standardUserDefaults()
-        if let sessionToken = defaults.stringForKey("meteorSessionToken") {
-            meteorClient.logonWithSessionToken(sessionToken)
-            // TODO: handle error case?
-            // manually set userId? doesn't seem to be up
-        }
-    }
+
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

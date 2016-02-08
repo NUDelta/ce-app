@@ -2,7 +2,8 @@
 #  use_frameworks!
 
 target 'ce-app' do
-pod 'ObjectiveDDP', :git => 'https://github.com/boundsj/ObjectiveDDP.git', :tag => 'v0.2.0'
+
+pod 'ObjectiveDDP', :git => 'https://github.com/aspin/ObjectiveDDP.git'
 
 end
 

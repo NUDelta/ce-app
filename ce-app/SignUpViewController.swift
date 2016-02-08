@@ -34,6 +34,6 @@ class SignUpViewController: UIViewController {
                 self.performSegueWithIdentifier("profileSettings", sender: self)
             }
             
-        }        
+        }
     }
 }
