@@ -87,5 +87,13 @@ class ExperienceController: UITableViewController {
         
         return cell
     }
+    
+    // MARK: UI Interactions
+    @IBAction func logoutButtonTapped(sender: AnyObject) {
+        meteorClient.logout()
+        // Probably should have this post a notification to for the navigation controller to intercept?
+        self.parentViewController?.performSegueWithIdentifier("signUpModal", sender: parentViewController!)
+    }
+    
 }
 

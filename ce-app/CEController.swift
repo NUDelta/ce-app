@@ -21,9 +21,12 @@ class CEController: UINavigationController {
         let defaults = NSUserDefaults.standardUserDefaults()
         if let sessionToken = defaults.stringForKey("meteorSessionToken") {
             meteorClient.logonWithSessionToken(sessionToken) { (response, error) -> Void in
-                print("")
+                if let _ = response {
+                    print("Successfully reauthenticated with userId \(self.meteorClient.userId)")
+                } else {
+                    self.performSegueWithIdentifier("signUpModal", sender: self)
+                }
             }
-            // TODO: handle error case?
         } else {
             performSegueWithIdentifier("signUpModal", sender: self)
         }

@@ -54,6 +54,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Experiences" id="TLn-Cb-dsk">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="56C-0L-ZfP">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IZn-vX-Fj6">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutButtonTapped:" destination="IvQ-en-kKX" eventType="touchUpInside" id="taj-uK-pBJ"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Edit Settings" id="5U2-iN-jaw">
                             <connections>
                                 <segue destination="h0Y-5e-FZO" kind="presentation" id="kds-Rn-9GQ"/>
@@ -178,8 +188,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8o-TZ-CsR">
-                                <rect key="frame" x="16" y="28" width="61" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login / Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8o-TZ-CsR">
+                                <rect key="frame" x="16" y="28" width="117" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -195,27 +205,42 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xb-h4-z3a">
-                                <rect key="frame" x="158" y="184" width="59" height="30"/>
+                                <rect key="frame" x="280" y="184" width="59" height="30"/>
                                 <state key="normal" title="Sign Up!"/>
                                 <connections>
                                     <action selector="signUpButtonTapped:" destination="Ulp-GH-Gw8" eventType="touchUpInside" id="K4l-xC-Yy1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74u-fV-63y">
+                                <rect key="frame" x="36" y="184" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="Ulp-GH-Gw8" eventType="touchUpInside" id="4cy-2l-jKE"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="mgU-vd-fJw" firstAttribute="top" secondItem="w8o-TZ-CsR" secondAttribute="bottom" constant="22" id="2vK-DW-HH9"/>
+                            <constraint firstItem="6xb-h4-z3a" firstAttribute="trailing" secondItem="NQO-za-xHY" secondAttribute="trailing" constant="-20" id="4s5-U4-EyP"/>
                             <constraint firstItem="mgU-vd-fJw" firstAttribute="leading" secondItem="NQO-za-xHY" secondAttribute="leading" id="5RV-8r-Ojv"/>
                             <constraint firstItem="w8o-TZ-CsR" firstAttribute="leading" secondItem="mgU-vd-fJw" secondAttribute="leading" id="97S-TB-dV5"/>
                             <constraint firstItem="NQO-za-xHY" firstAttribute="top" secondItem="mgU-vd-fJw" secondAttribute="bottom" constant="24" id="A1z-ql-i8v"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NQO-za-xHY" secondAttribute="trailing" id="Mpx-li-OIK"/>
+                            <constraint firstItem="74u-fV-63y" firstAttribute="centerY" secondItem="6xb-h4-z3a" secondAttribute="centerY" id="W3U-0t-pZS"/>
                             <constraint firstAttribute="leadingMargin" secondItem="mgU-vd-fJw" secondAttribute="leading" id="XVN-SG-IlF"/>
                             <constraint firstItem="6xb-h4-z3a" firstAttribute="centerX" secondItem="NQO-za-xHY" secondAttribute="centerX" id="ck4-sc-Blb"/>
                             <constraint firstItem="w8o-TZ-CsR" firstAttribute="top" secondItem="qW1-qA-N8v" secondAttribute="bottom" constant="8" id="eP1-Sd-kc3"/>
                             <constraint firstItem="6xb-h4-z3a" firstAttribute="top" secondItem="NQO-za-xHY" secondAttribute="bottom" constant="29" id="pb2-Jm-nBm"/>
+                            <constraint firstItem="74u-fV-63y" firstAttribute="leading" secondItem="NQO-za-xHY" secondAttribute="leading" constant="20" id="ug2-nb-3I8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mgU-vd-fJw" secondAttribute="trailing" id="vpU-E6-sJ5"/>
                             <constraint firstAttribute="leadingMargin" secondItem="NQO-za-xHY" secondAttribute="leading" id="wM0-37-Oxo"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ck4-sc-Blb"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -248,6 +273,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Eus-2X-8rE"/>
+        <segue reference="kds-Rn-9GQ"/>
     </inferredMetricsTieBreakers>
 </document>
