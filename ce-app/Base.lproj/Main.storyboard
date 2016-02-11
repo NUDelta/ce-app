@@ -23,7 +23,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's a take a collage of sunsets across the world!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUH-M3-cLY">
-                                            <rect key="frame" x="18" y="36" width="340" height="18"/>
+                                            <rect key="frame" x="18" y="36" width="309" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -34,16 +34,26 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="KYq-TX-7Nw">
+                                            <rect key="frame" x="332" y="5" width="30" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="Dov-UB-Go5"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="QTK-gA-aop" firstAttribute="leading" secondItem="Vvd-fl-6VH" secondAttribute="leadingMargin" constant="10" id="B3N-DE-8rO"/>
                                         <constraint firstAttribute="topMargin" secondItem="QTK-gA-aop" secondAttribute="top" id="S3r-0N-0MZ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="iUH-M3-cLY" secondAttribute="trailing" constant="40" id="hZF-XB-omM"/>
                                         <constraint firstItem="iUH-M3-cLY" firstAttribute="leading" secondItem="QTK-gA-aop" secondAttribute="leading" id="is9-gb-HTi"/>
+                                        <constraint firstItem="KYq-TX-7Nw" firstAttribute="centerY" secondItem="Vvd-fl-6VH" secondAttribute="centerY" id="kmC-a4-LEA"/>
                                         <constraint firstItem="iUH-M3-cLY" firstAttribute="top" secondItem="QTK-gA-aop" secondAttribute="bottom" constant="1" id="s6J-fO-hVi"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="KYq-TX-7Nw" secondAttribute="trailing" constant="5" id="teE-rc-JkB"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="descriptionLabel" destination="iUH-M3-cLY" id="aGp-y2-bYz"/>
+                                    <outlet property="isSubscribedCheckmark" destination="KYq-TX-7Nw" id="5bu-E8-4qk"/>
                                     <outlet property="titleLabel" destination="QTK-gA-aop" id="x7h-R4-RRZ"/>
                                 </connections>
                             </tableViewCell>
@@ -73,7 +83,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lcv-AC-X9H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="886.5" y="1062.5"/>
+            <point key="canvasLocation" x="1284.5" y="1328.5"/>
         </scene>
         <!--Profile Settings Controller-->
         <scene sceneID="oSs-0V-XXV">
@@ -87,8 +97,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Update your profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fym-CN-3nN">
-                                <rect key="frame" x="114" y="122" width="148" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update your profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fym-CN-3nN">
+                                <rect key="frame" x="114" y="122" width="148" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -100,14 +110,14 @@
                                     <action selector="submitProfileChanges:" destination="h0Y-5e-FZO" eventType="touchUpInside" id="rbK-44-2bx"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uuY-w4-Ehm">
-                                <rect key="frame" x="83" y="175" width="51" height="31"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uuY-w4-Ehm">
+                                <rect key="frame" x="83" y="174" width="51" height="31"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dce-ZV-vW3">
                                 <rect key="frame" x="83" y="246" width="51" height="31"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I have a camera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYn-fW-gzS">
-                                <rect key="frame" x="164" y="180" width="120" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have a camera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYn-fW-gzS">
+                                <rect key="frame" x="164" y="179" width="120" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -272,6 +282,9 @@
             <point key="canvasLocation" x="68" y="1063"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="checkmark" width="50" height="50"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kds-Rn-9GQ"/>
     </inferredMetricsTieBreakers>

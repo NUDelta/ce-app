@@ -23,6 +23,10 @@ class CEController: UINavigationController {
             meteorClient.logonWithSessionToken(sessionToken) { (response, error) -> Void in
                 if let _ = response {
                     print("Successfully reauthenticated with userId \(self.meteorClient.userId)")
+                    
+                    // This code is potentially dangerous?
+                    let child = self.childViewControllers[0] as! ExperienceController
+                    child.setupDataSources()
                 } else {
                     self.performSegueWithIdentifier("signUpModal", sender: self)
                 }

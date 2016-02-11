@@ -7,6 +7,7 @@
 //
 
 class Experience {
+    let id: String
     var name: String
     var author: String
     var description: String
@@ -14,7 +15,8 @@ class Experience {
     var modules: [String]
     var requirements: [String]
     
-    init(name: String, author: String, description: String, startEmailText: String, modules: [String], requirements: [String]) {
+    init(id: String, name: String, author: String, description: String, startEmailText: String, modules: [String], requirements: [String]) {
+        self.id = id
         self.name = name
         self.author = author
         self.description = description

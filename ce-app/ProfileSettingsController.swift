@@ -53,7 +53,7 @@ class ProfileSettingsController: UIViewController {
         meteorClient.callMethodName("/users/update", parameters: params) { (response, error) -> Void in
             if let _ = response {
                 self.meteorClient.callMethodName("updateUserExperiences", parameters: [self.meteorClient.userId], responseCallback: { (response, error) -> Void in
-                    self.performSegueWithIdentifier("showExperiences", sender: self)
+                    self.dismissViewControllerAnimated(true, completion: nil)
                 })
             } else if let err = error{
                 print(err)
