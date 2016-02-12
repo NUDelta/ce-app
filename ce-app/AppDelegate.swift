@@ -47,7 +47,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    func application(application: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
+        let query = url.parseQuery()
+        if let experienceId = query["id"] as? String {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let navigationController = storyboard.instantiateInitialViewController()
+            let participateController = storyboard.instantiateViewControllerWithIdentifier("participateController") as! ParticipateController
+            participateController.expId = experienceId
+            navigationController?.presentViewController(participateController, animated: true, completion: nil)
+        }
+        return true
+    }
 }
 

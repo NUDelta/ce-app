@@ -139,8 +139,11 @@ class ExperienceController: UITableViewController {
         
         let params = [["_id": meteorClient.userId], ["$set": ["profile.subscriptions": subscribedTo]]]
         meteorClient.callMethodName("/users/update", parameters: params) { (response, error) -> Void in
-            print(response)
-//            print(error)
+            if let result = response {
+                print(result)
+            } else {
+                print(error)
+            }
         }
     }
     

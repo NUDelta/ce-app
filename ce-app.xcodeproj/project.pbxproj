@@ -21,6 +21,8 @@
 		AA6CEA591C6484EC00B06217 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA6CEA571C6484EC00B06217 /* LaunchScreen.storyboard */; };
 		AA6CEA641C6484EC00B06217 /* ce_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6CEA631C6484EC00B06217 /* ce_appTests.swift */; };
 		AA6CEA6F1C6484EC00B06217 /* ce_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6CEA6E1C6484EC00B06217 /* ce_appUITests.swift */; };
+		AA939DF31C6E7F3E004491AE /* NSURL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA939DF21C6E7F3E004491AE /* NSURL+Extensions.swift */; };
+		AAA9CE521C654BFC00563A84 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA9CE511C654BFC00563A84 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		AA6CEA6A1C6484EC00B06217 /* ce-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ce-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6CEA6E1C6484EC00B06217 /* ce_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ce_appUITests.swift; sourceTree = "<group>"; };
 		AA6CEA701C6484EC00B06217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA939DF21C6E7F3E004491AE /* NSURL+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURL+Extensions.swift"; sourceTree = "<group>"; };
+		AAA9CE511C654BFC00563A84 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,7 @@
 				AA6CEA551C6484EC00B06217 /* Assets.xcassets */,
 				AA6CEA571C6484EC00B06217 /* LaunchScreen.storyboard */,
 				AA6CEA5A1C6484EC00B06217 /* Info.plist */,
+				AA939DF21C6E7F3E004491AE /* NSURL+Extensions.swift */,
 			);
 			path = "ce-app";
 			sourceTree = "<group>";
@@ -360,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65C783EF1C67ED8E002EC844 /* CEController.swift in Sources */,
+				AA939DF31C6E7F3E004491AE /* NSURL+Extensions.swift in Sources */,
 				AA581F3E1C648EB9008A7995 /* Experience.swift in Sources */,
 				AA6CEA511C6484EC00B06217 /* ExperienceController.swift in Sources */,
 				6551BE0F1C6542BE00EF3D3D /* ProfileSettingsController.swift in Sources */,

@@ -11,7 +11,7 @@ import UIKit
 class ParticipateController: UIViewController,UIImagePickerControllerDelegate,
     UINavigationControllerDelegate {
     var meteorClient: MeteorClient!
-    let expId = "7XMzsFoXSoHq8HnH3"
+    var expId = "7XMzsFoXSoHq8HnH3"
     
     
     @IBOutlet weak var experienceNameLabel: UILabel!
@@ -44,7 +44,7 @@ class ParticipateController: UIViewController,UIImagePickerControllerDelegate,
         let params: [AnyObject] = [["_id": expId]]
         meteorClient.callMethodName("getExperiences", parameters: params) { (response, error) -> Void in
             if let result = response {
-                let experience = result["result"]![0] as! [String:AnyObject]
+                let experience = result["result"]![0] as! [String: AnyObject]
                 self.experienceNameLabel.text = experience["name"] as! String
                 self.experienceDescLabel.text = experience["description"] as! String
             }
