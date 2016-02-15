@@ -18,12 +18,6 @@ class ParticipateController: UIViewController,UIImagePickerControllerDelegate,
     @IBOutlet weak var experienceDescLabel: UILabel!
     
     @IBOutlet weak var imageView: UIImageView!
-    @IBAction func uploadPictureButtonTapped(sender: UIButton) {
-        
-    }
-    
-    let picker = UIImagePickerController()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,12 +26,58 @@ class ParticipateController: UIViewController,UIImagePickerControllerDelegate,
         picker.delegate = self
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "meteorClientConnected", name: MeteorClientConnectionReadyNotification, object: nil)
-        
-        
     }
     
-    @IBAction func shootPhotoButtonTapped(sender: UIButton) {
-        
+    let picker = UIImagePickerController()
+    
+    @IBAction func choosePhotoFromLibraryButtonTapped(sender: UIBarButtonItem) {
+            picker.allowsEditing = false //2
+            picker.sourceType = .PhotoLibrary //3
+            picker.modalPresentationStyle = .Popover
+            presentViewController(picker,
+                animated: true, completion: nil)//4
+            picker.popoverPresentationController?.barButtonItem = sender
+    }
+    
+    func noCamera(){
+        let alertVC = UIAlertController(
+            title: "No Camera",
+            message: "Sorry, this device has no camera",
+            preferredStyle: .Alert)
+        let okAction = UIAlertAction(
+            title: "OK",
+            style:.Default,
+            handler: nil)
+        alertVC.addAction(okAction)
+        presentViewController(alertVC,
+            animated: true,
+            completion: nil)
+    }
+    
+    func uploadSucceeded(){
+        let alertVC = UIAlertController(
+            title: "Upload success",
+            message: "We got your pic!",
+            preferredStyle: .Alert)
+        let okAction = UIAlertAction(
+            title: "OK",
+            style:.Default,
+            handler: nil)
+        alertVC.addAction(okAction)
+        presentViewController(alertVC,
+            animated: true,
+            completion: nil)
+    }
+    
+    @IBAction func shootPhotoButtonTapped(sender: UIBarButtonItem) {
+        if UIImagePickerController.availableCaptureModesForCameraDevice(.Rear) != nil {
+            picker.allowsEditing = false
+            picker.sourceType = UIImagePickerControllerSourceType.Camera
+            picker.cameraCaptureMode = .Photo
+            presentViewController(picker, animated: true, completion: nil)
+        } else {
+            noCamera()
+        }
     }
     
     func meteorClientConnected() {
@@ -51,14 +91,38 @@ class ParticipateController: UIViewController,UIImagePickerControllerDelegate,
         }
     }
     
+    @IBAction func submitPhotoButtonTapped(sender: UIButton) {
+        print("\(imageView.image)")
+        let imageData = UIImagePNGRepresentation(imageView.image!)!
+        
+        let base64String = imageData.base64EncodedStringWithOptions(.Encoding64CharacterLineLength)
+        
+        let params: [AnyObject] = [expId, base64String]
+        meteorClient.callMethodName("insertPhoto", parameters: params) { (response, error) -> Void in
+            if let err = error {
+                print(err);
+            } else {
+                self.uploadSucceeded();
+            }
+            
+            if let result = response {
+                print((result["result"] as! String) == base64String)
+            }
+        }
+    }
+    
+    
     //MARK: Delegates
     func imagePickerController(
         picker: UIImagePickerController,
         didFinishPickingMediaWithInfo info: [String : AnyObject])
     {
-        
+        let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage //2
+        imageView.contentMode = .ScaleAspectFit //3
+        imageView.image = chosenImage //4
+        dismissViewControllerAnimated(true, completion: nil) //5
     }
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
-        
+        dismissViewControllerAnimated(true, completion: nil)
     }
 }

@@ -22,7 +22,6 @@
 		AA6CEA641C6484EC00B06217 /* ce_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6CEA631C6484EC00B06217 /* ce_appTests.swift */; };
 		AA6CEA6F1C6484EC00B06217 /* ce_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6CEA6E1C6484EC00B06217 /* ce_appUITests.swift */; };
 		AA939DF31C6E7F3E004491AE /* NSURL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA939DF21C6E7F3E004491AE /* NSURL+Extensions.swift */; };
-		AAA9CE521C654BFC00563A84 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA9CE511C654BFC00563A84 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +66,6 @@
 		AA6CEA6E1C6484EC00B06217 /* ce_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ce_appUITests.swift; sourceTree = "<group>"; };
 		AA6CEA701C6484EC00B06217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA939DF21C6E7F3E004491AE /* NSURL+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURL+Extensions.swift"; sourceTree = "<group>"; };
-		AAA9CE511C654BFC00563A84 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +251,7 @@
 				TargetAttributes = {
 					AA6CEA4A1C6484EC00B06217 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = QX3YDMFUYB;
 					};
 					AA6CEA5E1C6484EC00B06217 = {
 						CreatedOnToolsVersion = 7.2;
@@ -515,6 +514,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"/**",
@@ -523,6 +524,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.delta.ce-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ce-app-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -535,6 +537,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"/**",
@@ -543,6 +547,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.delta.ce-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ce-app-Bridging-Header.h";
 			};
 			name = Release;
