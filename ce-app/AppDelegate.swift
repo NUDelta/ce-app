@@ -50,12 +50,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
         let query = url.parseQuery()
-        if let experienceId = query["id"] as? String {
+        
+        // TESTING: paste 'ceapp://?action=participate&id=[find a expId' into Safari
+        if let action = query["action"] as? String, experienceId = query["id"] as? String {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let navigationController = storyboard.instantiateInitialViewController()
-            let participateController = storyboard.instantiateViewControllerWithIdentifier("participateController") as! ParticipateController
-            participateController.expId = experienceId
-            navigationController?.presentViewController(participateController, animated: true, completion: nil)
+            switch (action) {
+            case "participate":
+                let participateController = storyboard.instantiateViewControllerWithIdentifier("participateController") as! ParticipateController
+                participateController.expId = experienceId
+                self.window?.rootViewController?.presentViewController(participateController, animated: true, completion: nil)
+                break
+            default:
+                break
+            }
         }
         return true
     }

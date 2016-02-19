@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ParticipateController: UIViewController,UIImagePickerControllerDelegate,
+class ParticipateController: UIViewController, UIImagePickerControllerDelegate,
     UINavigationControllerDelegate {
     var meteorClient: MeteorClient!
-    var expId = "7XMzsFoXSoHq8HnH3"
+    var expId: String!
     
     
     @IBOutlet weak var experienceNameLabel: UILabel!
@@ -22,21 +22,27 @@ class ParticipateController: UIViewController,UIImagePickerControllerDelegate,
     override func viewDidLoad() {
         super.viewDidLoad()
         meteorClient = (UIApplication.sharedApplication().delegate as! AppDelegate).meteorClient
-        
         picker.delegate = self
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "meteorClientConnected", name: MeteorClientConnectionReadyNotification, object: nil)
+        let params: [AnyObject] = [["_id": expId]]
+        meteorClient.callMethodName("getExperiences", parameters: params) { (response, error) -> Void in
+            if let result = response {
+                let experience = result["result"]![0] as! [String: AnyObject]
+                self.experienceNameLabel.text = experience["name"] as? String
+                self.experienceDescLabel.text = experience["description"]as? String
+            }
+        }
     }
     
     let picker = UIImagePickerController()
     
     @IBAction func choosePhotoFromLibraryButtonTapped(sender: UIBarButtonItem) {
-            picker.allowsEditing = false //2
-            picker.sourceType = .PhotoLibrary //3
-            picker.modalPresentationStyle = .Popover
-            presentViewController(picker,
-                animated: true, completion: nil)//4
-            picker.popoverPresentationController?.barButtonItem = sender
+        picker.allowsEditing = false //2
+        picker.sourceType = .PhotoLibrary //3
+        picker.modalPresentationStyle = .Popover
+        presentViewController(picker,
+            animated: true, completion: nil)//4
+        picker.popoverPresentationController?.barButtonItem = sender
     }
     
     func noCamera(){
@@ -46,7 +52,7 @@ class ParticipateController: UIViewController,UIImagePickerControllerDelegate,
             preferredStyle: .Alert)
         let okAction = UIAlertAction(
             title: "OK",
-            style:.Default,
+            style: .Default,
             handler: nil)
         alertVC.addAction(okAction)
         presentViewController(alertVC,
@@ -61,7 +67,7 @@ class ParticipateController: UIViewController,UIImagePickerControllerDelegate,
             preferredStyle: .Alert)
         let okAction = UIAlertAction(
             title: "OK",
-            style:.Default,
+            style: .Default,
             handler: nil)
         alertVC.addAction(okAction)
         presentViewController(alertVC,
@@ -80,24 +86,11 @@ class ParticipateController: UIViewController,UIImagePickerControllerDelegate,
         }
     }
     
-    func meteorClientConnected() {
-        let params: [AnyObject] = [["_id": expId]]
-        meteorClient.callMethodName("getExperiences", parameters: params) { (response, error) -> Void in
-            if let result = response {
-                let experience = result["result"]![0] as! [String: AnyObject]
-                self.experienceNameLabel.text = experience["name"] as! String
-                self.experienceDescLabel.text = experience["description"] as! String
-            }
-        }
-    }
-    
     @IBAction func submitPhotoButtonTapped(sender: UIButton) {
-        print("\(imageView.image)")
         let imageData = UIImagePNGRepresentation(imageView.image!)!
-        
         let base64String = imageData.base64EncodedStringWithOptions(.Encoding64CharacterLineLength)
-        
         let params: [AnyObject] = [expId, base64String]
+        
         meteorClient.callMethodName("insertPhoto", parameters: params) { (response, error) -> Void in
             if let err = error {
                 print(err);
@@ -112,7 +105,7 @@ class ParticipateController: UIViewController,UIImagePickerControllerDelegate,
     }
     
     
-    //MARK: Delegates
+    // MARK: Delegates
     func imagePickerController(
         picker: UIImagePickerController,
         didFinishPickingMediaWithInfo info: [String : AnyObject])
