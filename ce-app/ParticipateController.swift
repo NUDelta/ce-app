@@ -11,7 +11,7 @@ import UIKit
 class ParticipateController: UIViewController, UIImagePickerControllerDelegate,
     UINavigationControllerDelegate {
     var meteorClient: MeteorClient!
-    var expId: String = "7XMzsFoXSoHq8HnH3"
+    var expId: String = "mXnv5e4ZMsj5n9mi6"
     
     
     @IBOutlet weak var experienceNameLabel: UILabel!

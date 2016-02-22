@@ -27,6 +27,8 @@ class CEController: UINavigationController {
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let resultController = storyboard.instantiateViewControllerWithIdentifier("resultController")
                     self.presentViewController(resultController, animated: true, completion: nil)
+//                    let participateController = storyboard.instantiateViewControllerWithIdentifier("participateController")
+//                    self.presentViewController(participateController, animated: true, completion: nil)
                     // This code is potentially dangerous?
                     let child = self.childViewControllers[0] as! ExperienceController
                     child.setupDataSources()
