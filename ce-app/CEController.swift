@@ -24,6 +24,9 @@ class CEController: UINavigationController {
                 if let _ = response {
                     print("Successfully reauthenticated with userId \(self.meteorClient.userId)")
                     
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let resultController = storyboard.instantiateViewControllerWithIdentifier("resultController")
+                    self.presentViewController(resultController, animated: true, completion: nil)
                     // This code is potentially dangerous?
                     let child = self.childViewControllers[0] as! ExperienceController
                     child.setupDataSources()

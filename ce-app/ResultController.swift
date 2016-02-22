@@ -15,12 +15,28 @@ class ResultController: UICollectionViewController {
     let imageArr: [UIImage] = [UIImage(named: "full_breakfast")!, UIImage(named: "egg_benedict")!, UIImage(named: "hamburger")!, UIImage(named: "white_chocolate_donut")!, UIImage(named: "ChickenPestoSandwich")!]
     
     var meteorClient: MeteorClient!
-    //var photoArr: [UIImage]!
+    var photoArr: [UIImage]!
     let expId = "7XMzsFoXSoHq8HnH3"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         meteorClient = (UIApplication.sharedApplication().delegate as! AppDelegate).meteorClient
+        photoArr = [UIImage]()
+        
+        setupDataSources()
+    }
+    
+    func setupDataSources() {
+        let params = [expId]
+        meteorClient.callMethodName("getPhotos", parameters: params) { (response, error) -> Void in
+            if let result = response {
+                let base64Images: [String] = result["result"] as! [String]
+                self.photoArr = base64Images.map({ (base64) -> UIImage in
+                    let decodedData = NSData(base64EncodedString: base64, options: NSDataBase64DecodingOptions.IgnoreUnknownCharacters)
+                    return UIImage(data: decodedData!)!
+                })
+            }
+        }
     }
 
     
@@ -28,7 +44,7 @@ class ResultController: UICollectionViewController {
     
     // tell the collection view how many cells to make
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.imageArr.count
+        return self.photoArr.count
     }
     
     // make a cell for each cell index path
@@ -38,7 +54,7 @@ class ResultController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ResultControllerCell
         
         // Use the outlet in our custom class to get a reference to the UILabel in the cell
-        cell.resultImage.image = self.imageArr[indexPath.item]
+        cell.resultImage.image = self.photoArr[indexPath.item]
         //cell.backgroundColor = UIColor.yellowColor() // make cell more visible in our example project
         
         return cell
