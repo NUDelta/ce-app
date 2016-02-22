@@ -87,8 +87,8 @@ class ParticipateController: UIViewController, UIImagePickerControllerDelegate,
     }
     
     @IBAction func submitPhotoButtonTapped(sender: UIButton) {
-        let imageData = UIImagePNGRepresentation(imageView.image!)!
-        let base64String = imageData.base64EncodedStringWithOptions(.Encoding64CharacterLineLength)
+        let imageData = UIImagePNGRepresentation(imageView.image!)
+        let base64String = imageData!.base64EncodedStringWithOptions(.Encoding64CharacterLineLength)
         let params: [AnyObject] = [expId, base64String]
         
         meteorClient.callMethodName("insertPhoto", parameters: params) { (response, error) -> Void in
